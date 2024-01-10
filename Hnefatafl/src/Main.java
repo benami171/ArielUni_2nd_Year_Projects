@@ -8,6 +8,7 @@ public class Main {
      * Don't make any changes here
      * @param args
      */
+
     public static void main(String[] args) {
         PlayableLogic gameLogic = new GameLogic();
         GUI_for_chess_like_games gui = new GUI_for_chess_like_games(gameLogic, "Vikings Chess Game");
