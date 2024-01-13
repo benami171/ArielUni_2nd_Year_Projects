@@ -9,9 +9,8 @@ public abstract class ConcretePiece implements Piece {
     private ArrayList<Position> moves;
     private int distance;
 
-    public ConcretePiece(Player player, String type, int index){
+    public ConcretePiece(Player player, int index){
         this.owner = player;
-        this.type = type;
         this.number = index;
         this.distance = 0;
         moves = new ArrayList<>();
