@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Pawn extends ConcretePiece {
 
     private String Player1 =  "♙";
@@ -5,11 +7,18 @@ public class Pawn extends ConcretePiece {
     private String type;
     private int eatAmount = 0;
 
-    public Pawn (Player owner, String str, int index){
-        super(owner,str,index);
+
+    public Pawn (Player owner, int index){
+        super(owner,index);
+        if(owner.isPlayerOne()) this.type = "♙";
+        this.type = "♟";
         this.type=owner.isPlayerOne()?Player1:Player2;
         eatAmount = 0;
     }
+
+
+
+
 
     @Override
     public String getType() {
