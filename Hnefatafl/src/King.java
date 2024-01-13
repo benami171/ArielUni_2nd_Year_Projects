@@ -1,9 +1,9 @@
 public class King extends ConcretePiece {
 
-    private String type = "♔";
+    private final String type = "♔";
 
-    public King(Player player, String type,int index){
-        super(player,type,index);
+    public King(Player player,int index){
+        super(player,index);
     }
 
 
